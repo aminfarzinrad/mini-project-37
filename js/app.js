@@ -13,3 +13,10 @@ for(let i = 0; i < btnsOpenModal.length; i++){
         }
     )
 };
+
+btnColseModal.addEventListener('click',
+    function(){
+        modal.classList.add('hidden');
+        overLay.classList.add('hidden');
+    }
+);
