@@ -39,10 +39,11 @@ overLay.addEventListener('click', closeModal
 // Keyboard button click
 document.addEventListener('keydown',
     function(e){
-        if(e.key === 'Escape'){
-            if(!modal.classList.contains('hidden')){
-                closeModal();
-            }
+        if(e.key === 'Escape' && !modal.classList.contains('hidden')){
+            // if(!modal.classList.contains('hidden')){
+            //     closeModal();
+            // }
+            closeModal();
         }
     }
 );
