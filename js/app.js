@@ -36,3 +36,13 @@ overLay.addEventListener('click', closeModal
     //     overLay.classList.add('hidden');
     // }
 );
+// Keyboard button click
+document.addEventListener('keydown',
+    function(e){
+        if(e.key === 'Escape'){
+            if(!modal.classList.contains('hidden')){
+                closeModal();
+            }
+        }
+    }
+);
